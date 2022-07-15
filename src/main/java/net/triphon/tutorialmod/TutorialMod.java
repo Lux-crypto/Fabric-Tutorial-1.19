@@ -1,6 +1,7 @@
 package net.triphon.tutorialmod;
 
 import net.fabricmc.api.ModInitializer;
+import net.triphon.tutorialmod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 //Very important comment :)(:
@@ -10,6 +11,8 @@ public class TutorialMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+
+		ModItems.registerModItems();
 
 	}
 }
